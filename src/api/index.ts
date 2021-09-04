@@ -14,7 +14,7 @@ const http = async (url: string) => {
 
 const getWeatherData = async (city = "Munich") => {
   const response = await http(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city},de&APPID=${WEATHER_APP_API_KEY}&cnt=40`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city},de&APPID=${WEATHER_APP_API_KEY}&cnt=40`
   );
   return response;
 };
